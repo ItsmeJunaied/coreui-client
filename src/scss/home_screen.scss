@@ -1,0 +1,87 @@
+@import "./variables";
+
+/* Home screen feature section */
+.home-features {
+  padding-top: 77px;
+  padding-bottom: 80px;
+  background-color: $c-white;
+  text-align: center;
+
+  .feature-title {
+    font-size: 13px;
+    font-weight: 550;
+    margin-bottom: 8px;
+  }
+
+  .feature-more {
+    font-size: 13px;
+    color: $c-darkgrey;
+    margin-bottom: 8px;
+  }
+}
+
+/* Home screen theme section */
+.home-themes {
+  padding-top: 77px;
+  background-color: $c-lightgreen;
+  text-align: center;
+  color: $c-white;
+  .img-fluid {
+    padding-top: 50px;
+  }
+}
+
+/* Home screen footer section */
+.home-footer {
+  background-color: $c-tuna;
+  color: $c-white;
+  padding-top: 77px;
+  padding-bottom: 10px;
+  .social {
+    color: $c-white;
+    .fas {
+      margin-right: 25px;
+      font-size: 25px;
+      float: left;
+      &:hover {
+        color: $c-light-sky;
+        transition: all 0.25s;
+      }
+    }
+  }
+  .adress span,
+  .contact span,
+  .social span {
+    font-weight: 800;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .adress li p,
+  .contact li a,
+  .social li {
+    display: inline;
+  }
+  .social li a {
+    color: $c-white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .adress,
+  .contact,
+  .social {
+    list-style: none;
+  }
+  hr {
+    background-color: $c-darkgrey;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .contact li a {
+    color: $c-white;
+  }
+}

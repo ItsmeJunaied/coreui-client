@@ -1,0 +1,41 @@
+@import "./variables";
+
+/* home screen & dashboard navbar style */
+.navbar-light {
+  position: fixed;
+  width: 100vw;
+  z-index: 999; // make sure nav is on top while scrolling
+
+  background-color: $c-nav-background;
+  .navbar-brand {
+    color: $c-logo;
+    font-weight: bold;
+    font-size: $f-size-h1;
+    margin-left: 100px;
+  }
+  .navbar-logo {
+    color: $c-logo !important;
+  }
+  .navbar-menu-item {
+    &:link {
+      color: grey !important;
+    }
+  
+    &:focus {
+      font-weight: bolder !important;
+      color: black !important;
+    }
+  
+    &:hover {
+      color: black !important;
+    }
+  }
+  
+  .navbar-btn-signin {
+    width: 80px;
+  }
+  
+  .navbar-btn-signup {
+    width: 150px;
+  }
+}
