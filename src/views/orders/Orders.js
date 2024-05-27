@@ -491,7 +491,7 @@ const Orders = () => {
                                   rows="3"
                                   value={ordersData.note}
                                   onChange={handleChange}
-                                  placeholder="Enter note"
+                                  placeholder="Enter notee"
                                 />
                               </CFormGroup>
                             </CCol>
