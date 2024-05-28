@@ -1,0 +1,34 @@
+[debug] [2024-05-28T17:13:20.820Z] ----------------------------------------------------------------------
+[debug] [2024-05-28T17:13:20.823Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-28T17:13:20.823Z] CLI Version:   13.8.3
+[debug] [2024-05-28T17:13:20.823Z] Platform:      win32
+[debug] [2024-05-28T17:13:20.823Z] Node Version:  v20.12.0
+[debug] [2024-05-28T17:13:20.823Z] Time:          Tue May 28 2024 23:13:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-05-28T17:13:20.824Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-28T17:13:20.829Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-05-28T17:13:20.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-28T17:13:20.963Z] > authorizing via signed-in user (projecthelpmern@gmail.com)
+[debug] [2024-05-28T17:13:20.963Z] [iam] checking project dashboard-8f177 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-28T17:13:20.964Z] > refreshing access token with scopes: []
+[debug] [2024-05-28T17:13:20.965Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-28T17:13:20.965Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-28T17:13:21.705Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-28T17:13:21.706Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-28T17:13:21.717Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-8f177:testIamPermissions [none]
+[debug] [2024-05-28T17:13:21.718Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-8f177:testIamPermissions x-goog-quota-user=projects/dashboard-8f177
+[debug] [2024-05-28T17:13:21.718Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-8f177:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-28T17:13:22.444Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-05-28T17:13:22.444Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-05-28T17:13:23.538Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-8f177:testIamPermissions 200
+[debug] [2024-05-28T17:13:23.538Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-8f177:testIamPermissions {}
+[debug] [2024-05-28T17:13:23.539Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project dashboard-8f177:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-05-28T17:13:23.542Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-8f177 [none]
+[debug] [2024-05-28T17:13:24.317Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-8f177 403
+[debug] [2024-05-28T17:13:24.317Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-8f177 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-05-28T17:13:24.320Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

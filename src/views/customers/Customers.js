@@ -99,7 +99,7 @@ const Customers = () => {
   //fetch data usin react query
   const dataFetch = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/merchants');
+      const response = await axios.get('https://core-ui-server.vercel.app/merchants');
       setMerchants(response.data);
     } catch (error) {
       console.log(error);
@@ -168,7 +168,7 @@ const Customers = () => {
 
   const postMerchantData = async (merchantData) => {
     try {
-      const response = await fetch('http://localhost:5001/merchants', {
+      const response = await fetch('https://core-ui-server.vercel.app/merchants', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

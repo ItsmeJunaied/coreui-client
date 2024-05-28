@@ -139,7 +139,7 @@ const Orders = () => {
   const dataFetch = async () => {
     try {
 
-      const response = await axios.get('http://localhost:5001/order')
+      const response = await axios.get('https://core-ui-server.vercel.app/order')
       setOrders(response.data)
     } catch (error) {
       console.log(error)
@@ -152,7 +152,7 @@ const Orders = () => {
   const MerchanrDataFetch = async () => {
     try {
 
-      const response = await axios.get('http://localhost:5001/merchants')
+      const response = await axios.get('https://core-ui-server.vercel.app/merchants')
       const merchantNames = response.data.map(merchant => merchant.merchant_name);
       setMerchantName(merchantNames);
     } catch (error) {
@@ -238,7 +238,7 @@ const Orders = () => {
 
   const postOrderData = async (orderData) => {
     try {
-      const response = await fetch('http://localhost:5001/orders', {
+      const response = await fetch('https://core-ui-server.vercel.app/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
